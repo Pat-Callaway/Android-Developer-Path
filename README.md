@@ -7,6 +7,7 @@ This repository contains my progress through the [Official Android Basics with C
 | Project Name | Key Concepts Learned | Link |
 | :--- | :--- | :--- |
 | **Greeting Card** | Jetpack Compose basics, Text, Surfaces, Padding | [View Project](./GreetingCard) |
+|**Birthday Card** | UI Basics with Jetpack Compose| *Coming Soon*|
 | **Lemonade App** | State management, Click listeners, UI logic | *Coming Soon* |
 | **Tip Calculator** | Text input, state hoisting, Keyboard actions | *Coming Soon* |
 
