@@ -19,12 +19,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HappyBirthdayTheme {
+            HappyBirthdayTwoTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    GreetingText(message = "Happy Birthday Sam!")
                 }
             }
         }
@@ -33,19 +34,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingText(message: String, modifier: Modifier = Modifier){
     Text(
-        text = message
+        text = message,
+        modifier = modifier
     )
-
 }
 
 @Preview(showBackground = true)
 @Composable
 fun BirthdayCardPreview() {
-    HappyBirthdayTheme {
+    HappyBirthdayTwoTheme {
+        GreetingText(message = "Happy Birthday Sam!")
     }
-}
-
-@Composable
-fun HappyBirthdayTheme(content: @Composable () -> Unit) {
-    TODO("Not yet implemented")
 }
